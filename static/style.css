@@ -1,0 +1,42 @@
+/* static/styles.css */
+
+/* Basic spacing and form layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Error alert for GPS failure */
+#locationError {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* QR and buttons in admin panel */
+.qr-image {
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+/* Responsive table for dashboard */
+.table-responsive {
+  max-height: 500px;
+  overflow-y: auto;
+}
