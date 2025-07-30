@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Police Attendance</title>
+</head>
+<body>
+    <h2>Mark Attendance</h2>
+    {% if status %}<p><strong>{{ status }}</strong></p>{% endif %}
+    <form method="post">
+        Officer Name: <input type="text" name="officer" required><br><br>
+        Rank:
+        <select name="rank" required>
+            {% for r in ranks %}
+            <option value="{{ r }}">{{ r }}</option>
+            {% endfor %}
+        </select><br><br>
+        Police Station:
+        <select name="station" required>
+            {% for s in stations %}
+            <option value="{{ s }}">{{ s }}</option>
+            {% endfor %}
+        </select><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
